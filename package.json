@@ -1,0 +1,20 @@
+{
+  "name": "cypress",
+  "version": "1.0.0",
+  "description": "cypress",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "prettier": "prettier", 
+    "cy:laptop:headless": "npx cypress run -b chrome -C cypress.config.js",
+    "cy:laptop:headed": "npx cypress run -b electron --headed -C cypress.config.js",
+    "cy:mobile:headless": "npx cypress run -b electron -C cypressMobile.config.js",
+    "cy:mobile:headed": "npx cypress run -b chrome --headed -C cypressMobile.config.js"
+  },
+  "author": "BaranovMS",
+  "license": "ISC",
+  "devDependencies": {
+    "cypress": "^13.11.0",
+    "prettier": "^3.3.2"
+  }
+}
